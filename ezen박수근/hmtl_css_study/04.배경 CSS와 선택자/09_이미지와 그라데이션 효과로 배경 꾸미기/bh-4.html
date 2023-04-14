@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg-4.html</title>
+    <style>
+        #container{
+            width:1100px;
+            margin:50px auto;
+        }
+        .box{
+            float: left;
+            border: 1px solid gray;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            background:url(./images/bg4.jpg);
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+        #box1{
+            background-size: auto;
+        }
+        #box2{
+            background-size: 200px;
+        }
+        #box3{
+            background-size: 50%;
+        }
+        #box4{
+            background-size: 100% 100%;
+        }
+        #box5{
+            background-size: contain;
+        }
+        #box6{
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+    </div>
+</body>
+</html>

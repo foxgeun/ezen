@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/dceadd6cbb.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>expedia</title>
+</head>
+<body>
+   <div class="wrap"> 
+         <header class="header">
+            <div class="header_manu">
+                <div class="right_manu">
+                    <ul class="right_manu_list">
+                        <li><a href="#"><i class="fa-solid fa-globe"></i>&nbsp;한국어</a></li>
+                        <li><a href="#">숙박 시설 등록하기</a></li>
+                        <li><a href="#">지원</a></li>
+                        <li><a href="#">내 여행</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                        <li><a href="#">로그인</a></li>
+                    </div>
+                    </ul>
+                    <div class="left_manu">
+                    <ul class="left_manu_list">
+                        <li><a href="#"><img src="./images/logo.svg" alt=""></a></li>
+                        <li><a href="#" style="padding-left: 30px; text-decoration: none; color: black;">
+                            
+                            <select class="the_search">
+                            <option selected>여행 더 검색</option>
+                            <option value="1">숙소</option>
+                            <option value="2">항공</option>
+                            <option value="3">렌터카</option>
+                          </select>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </header>  
+
+        <main class="main">
+
+            <div class="reservation">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">숙소</button>
+                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">항공</button>
+                      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">렌터카</button>
+                      <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">항공 + 숙소</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active home_tab" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="flex_box">
+                        
+                            <div class="des">
+                                <p><i class="fa-solid fa-location-dot"></i></p>
+                                <p>목적지</p>
+                            </div>
+                            <div class="ch_in">
+                                <i style="font-size: 20px; margin-right: 20px;" class="fa-solid fa-calendar"></i>
+                                <div>
+                                    <p style="margin-right: 50px; margin-top: 10px; font-size: 10px;">체크인 날짜</p>
+                                    <p>4월 13일</p>
+                                </div>
+                            </div>
+                            <div class="ch_in">
+                                <i style="font-size: 20px; margin-right: 20px;" class="fa-solid fa-calendar"></i>
+                                <div>
+                                    <p style="margin-right: 50px; margin-top: 10px; font-size: 10px;">체크아웃 날짜</p>
+                                    <p>5월 13일</p>
+                                </div>
+                            </div>
+                            <div class="man">
+                                <i style="font-size: 20px; margin-right: 15px;" class="fa-solid fa-user"></i>
+                                <div>
+                                    <p style="margin-right: 140px; margin-top: 10px; font-size: 10px;">인원수</p>
+                                    <p>객실 1개,2명</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ch_box_div">
+                            <label for="air" style="margin-right: 20px;">
+                                <input type="checkbox" name="air" id="air">
+                                항공추가
+                            </label>
+                            <label for="rent">
+                                <input type="checkbox" name="rent" id="rent">
+                                렌터카추가
+                            </label>
+                        </div>
+                        <div class="home_btn_div">
+                        <button type="button" class="btn btn-primary home_btn">검색</button></div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+                  </div>
+            </div>
+        
+        <div class="caption">
+            <div class="caption_content">
+                <p><i class="fa-solid fa-triangle-exclamation"></i></p>
+                <p>
+                    2023년, 더 많은 여행을 편리하게 즐겨보세요! 이제 곧 익스피디아, 호텔스닷컴 및 Vrbo에서 하나의 계정을 사용해 로그인하고 예약하실 수 있습니다.<br><a href="#">자세히 알아보기</a></p>
+            </div>
+
+        </div>
+        <div class="ad1">
+            <div class="ad1_text">
+                <p class="ad1_text_content" style="font-size: 40px; color: white;">익스피디아 리워드로 <br>즉시 할인</p>
+                <p class="ad1_text_content" style="color: white;">수천 개 호텔에서 평균 15% 할인되는 회원가 등의 특<br>전을 누리실 수 있어요. 이용약관이 적용될 수 있습니<br>다.</p>
+                <button type="button" class="btn btn-primary">회원가 보기</button>
+            </div>
+            
+            <div class="ad1_blank"></div>
+        </div>
+
+        <div class="ad2">
+            <div class="ad2_img">
+                <img src="./images/banner2.jpg" alt="" class="ad2_img_cotent">
+            </div>
+            <div class="ad2_text">
+                <p style="font-size: 26px; margin: 5px;">익스피디아 앱에서 즐기는 더 많은 혜<br>택</p>
+                <p style="font-size: 13.5px; margin: 5px;">앱에서 예약 시 수천 개 호텔을 평균 15% 할인받으실 수 있으며 모든 예약에 대<br>해 포인트를 두 배로 적립해 드려요. 앱 전용 특가 상품으로 저렴하게 예약해 부<br>담 없이 더 많은 여행을 즐기고, 이동 중에도 여행의 모든 것을 관리하실 수 있어<br>요.<br></p>
+                <p style="margin-top: 10px; font-weight: bold;">기기의 카메라로 QR 코드를 스캔하여 앱을 다운로드해 보세요.</p>
+            </div>
+            <div class="ad2_qr">
+                <img src="./images/BEX-HP-CONTROL-16.jpg" alt="" class="ad2_qr_content">
+            </div>
+        </div>
+        <div class="tralvel_helper_ad">
+            <h3 class="tralvel_helper_text" style="color: black; font-size: 40px;">여행도우미</h3>
+            <div class="travel_helper_div_head">
+                <div class="travel_helper_div">
+                    <div class="travel_helper_text">
+                        <a style="color: black;">여행 변경 또는 취소 <br></a>
+                        <a style="color: black;">여행 일정 업데이트 또는 예약 취소</a>
+                    </div>
+                    <div class="travel_helper_icon"><i class="fa-solid fa-pen"></i></div>
+                </div>
+                <div class="travel_helper_div">
+                    <div class="travel_helper_text">
+                        <a style="color: black;">크레딧 또는 쿠폰 사용 <br></a>
+                        <a style="color: black;">새 여행에 쿠폰 또는 크레딧 적용</a>
+                    </div>
+                    <div class="travel_helper_icon"><i class="fa-solid fa-dollar-sign"></i></i></div>
+                </div>
+                <div class="travel_helper_div">
+                    <div class="travel_helper_text">
+                        <a style="color: black;">환불 상태 확인 <br></a>
+                        <a style="color: black;">진행 중인 환불 처리건의 현재 상태 확인</a>
+                    </div>
+                    <div class="travel_helper_icon"><i class="fa-solid fa-comments"></i></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="qatar">
+            <div class="qatar_ad">
+                <div class="qatar_img">
+                    <img src="./images/banner3.jpg" alt="" class="qatar_img_content">
+                </div>
+                <div class="qatar_text">
+                    <img src="./images/qatar.png" alt="">
+                    <p style="font-size: 20px;">다채로운 매력을 품은 카타르</p>
+                    <p style="font-size: 14px; padding-top: 10px;"> 푸른 하늘이 비치는 해변, 선셋 크루즈와 별빛 가득한 사막으로 초대합니다.</p>  
+                        
+                </div>
+            </div>
+        </div>
+        <div class="discount_ad">
+            <h3 style="color: black; font-size: 35px;">지금 할인받고 떠나세요!</h3>
+            <div class="discount_ad_block">
+                <div class="discount_img">
+                    
+                    <p style="padding-top: 150px; padding-left: 10px; font-size: 20px; color: white;">조기 예약 할인</p>
+                    <p style="padding-top: 10px; padding-left: 10px; color: white;"> 60일 미리 예약하면 엄선된 호텔 20% 할인! </p>
+                    </div>
+                <div class="discount_img2">
+
+                </div>    
+            </div>
+        </div>
+
+        <div class="expedia_text">
+            <div>
+            <p style="color: black;">익스피디아와 떠나는 세계 여행</p>
+            <a href="#">여행 옵션 보기</a>
+            </div>
+        </div>
+
+        <div class="exledia_group">
+            <img src="./images/EG_Wordmark_blue_RGB.svg" alt="">
+            <div class="exledia_group_div">
+                <div class="group_list">
+                    <ul>
+                        <li class="list_main"><p>회사</p></li>
+                        <li>회사 소개</li>
+                        <li>채용</li>
+                        <li>파트너십</li>
+                    </ul>
+                </div>
+                <div class="group_list">
+                    <ul>
+                        <li class="list_main"><p>검색</p></li>
+                        <li>국내 여행지</li>
+                        <li>국내 휴가용 주택</li>
+                        <li>국내 여행</li>
+                        <li>국내 항공권</li>
+                        <li>국내 렌터카</li>
+                        <li>여행 목적과 스타일에 따라 숙박 시설 선택</li>
+                        <li>공식 블로그</li>
+                        
+                    </ul>
+                </div>
+                <div class="group_list">
+                    <ul>
+                        <li class="list_main"><p>정책</p></li>
+                        <li>개인정보 처리 방침</li>
+                        <li>이용약관</li>
+                        
+                    </ul>
+                </div>
+                <div class="group_list">
+                    <ul>
+                        <li class="list_main"><p>지원</p></li>
+                        <li>지원</li>
+                        <li>예약을 변경 또는 취소</li>
+                        <li>환불 절차와 시기</li>
+                        <li>항공사 크레딧을 이용해 항공편 예약</li>
+                        <li>해외 여행에 필요한 문서</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>  
+        
+        </main>
+
+         <footer>
+            <div class="security">
+                <img src="./images/tl_transp.gif" alt="">
+                <p>© 2023 Expedia, Inc., Expedia Group 계열사. All rights reserved. Expedia 및 비행기 로고는 Expedia, Inc.의 상표 또는 등록 상표입니다.</p>
+                <p>트래블파트너익스체인지코리아 주식회사, 사업자등록번호: 821-88-01025</p>
+                <p>벡스트래블코리아 주식회사, 서울특별시 종로구 종로5길 7(청진동). 사업자등록번호: 724-86-00245.</p>
+                <p>관광사업자등록번호: 제2016-000008호</p>
+                <p>통신판매업신고번호: 2015-서울종로-1091호</p>
+            </div>
+        </footer>
+         <div class="fix">
+            <div class="fix_div">
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-comments"></i>지원</a>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
