@@ -1,97 +1,86 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-  />
-  <script src="https://kit.fontawesome.com/dceadd6cbb.js" crossorigin="anonymous"></script>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/dceadd6cbb.js"
+      crossorigin="anonymous"
+    ></script>
     <title>expedia clone</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="warp">
-        <header class="header">
-            <div class="header__manu">
-                <a href="#" class="header__manu__icon">Expedia</a>
-                <a href="#" class="header__manu__icon">여행 더 검색</a>
-                <a href="#" class="header__manu__icon"><i class="fa-sharp fa-solid fa-globe"></i></a>
-                <a href="#" class="header__manu__icon">한국어</a>
-                <a href="#" class="header__manu__icon">숙박 시설 등록하기</a>
-                <a href="#" class="header__manu__icon">지원</a>
-                <a href="#" class="header__manu__icon">내여행</a>
-                <a href="#" class="header__manu__icon"><i class="fa-sharp fa-solid fa-bell"></i></a>
-                <a href="#" class="header__manu__icon">로그인</a>
+      <header class="header">
+        <div class="header__manu">
+          <a href="#" class="header__manu__icon">Expedia</a>
+          <a href="#" class="header__manu__icon">여행 더 검색</a>
+          <a href="#" class="header__manu__icon"
+            ><i class="fa-sharp fa-solid fa-globe"></i
+          ></a>
+          <a href="#" class="header__manu__icon">한국어</a>
+          <a href="#" class="header__manu__icon">숙박 시설 등록하기</a>
+          <a href="#" class="header__manu__icon">지원</a>
+          <a href="#" class="header__manu__icon">내여행</a>
+          <a href="#" class="header__manu__icon"
+            ><i class="fa-sharp fa-solid fa-bell"></i
+          ></a>
+          <a href="#" class="header__manu__icon">로그인</a>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__background">
+          <div class="main__reservation">
+            <div class="flexbox">
+              <div class="main__reservation__list"><a href="#">숙소</a></div>
+              <div class="main__reservation__list"><a href="#">항공</a></div>
+              <div class="main__reservation__list"><a href="#">렌터카</a></div>
+              <div class="main__reservation__list">
+                <a href="#">항공 + 숙소</a>
+              </div>
             </div>
-        </header>
-        <main class="main">
-            <div class="main__background">
-                <div class="main__reservation">
-                    <div class="flexbox">
-                    <div class="main__reservation__list"><a href="#">숙소</a></div>
-                    <div class="main__reservation__list"><a href="#">항공</a></div>
-                    <div class="main__reservation__list"><a href="#">렌터카</a></div>
-                    <div class="main__reservation__list"><a href="#">항공 + 숙소</a></div>
-                </div>
-                <div class="flexbox2">
-                    <div class="main__reservation__box">
-                        <i class="fa-solid fa-location-dot"></i>
-                        
-                    </div>
-                    <div class="main__reservation__box">
-                        <i class="fa-solid fa-calendar"></i>
-                        
-                    </div>
-                    <div class="main__reservation__box">
-                        <i class="fa-solid fa-calendar"></i>
-                        
-                    </div>
-                    <div class="main__reservation__box">
-                        <i class="fa-solid fa-user"></i>
-                        
-                    </div>
-                </div>
-                <div class="main__reservation__radiobox">
-                    
-                       <label for="">
-                        <input type="checkbox">항공추가
-                       </label>
+            <div class="flexbox2">
+              <div class="main__reservation__box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="main__reservation__box">
+                <i class="fa-solid fa-calendar"></i>
+              </div>
+              <div class="main__reservation__box">
+                <i class="fa-solid fa-calendar"></i>
+              </div>
+              <div class="main__reservation__box">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </div>
+            <div class="main__reservation__radiobox">
+              <label for=""> <input type="checkbox" />항공추가 </label>
 
-                       <label for="">
-                        <input type="checkbox">렌터카 추가
-                       </label>
-                    
-                </div>
-                <div class="main__reservation__search">검색</div>
-                </div>
-                <div class="main__caption">
-                    경고창
-                </div>
-                <div class="main__img">
-                    이미지
-                </div>
-                <div class="main__qr">
-                    할인
-                </div>
-                <div class="main__group">
-                    <div class="main__group__1">1</div>
-                    <div class="main__group__2">2</div>
-                    <div class="main__group__3">3</div>
-                </div>
-                <div class="main__ad">
-                    광고
-                </div>
-                
+              <label for=""> <input type="checkbox" />렌터카 추가 </label>
             </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__group">
-                푸터
-            </div>
-        </footer>
+            <div class="main__reservation__search">검색</div>
+          </div>
+          <div class="main__caption">경고창</div>
+          <div class="main__img">이미지</div>
+          <div class="main__qr">할인</div>
+          <div class="main__group">
+            <div class="main__group__1">1</div>
+            <div class="main__group__2">2</div>
+            <div class="main__group__3">3</div>
+          </div>
+          <div class="main__ad">광고</div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__group">푸터</div>
+      </footer>
     </div>
-</body>
+    <!-- 수정합니다수정 -->
+  </body>
 </html>
