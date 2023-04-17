@@ -1,37 +1,37 @@
-// (function () {
-//   /* 접속자 위치정보 가져오기 */
+(function () {
+  /* 접속자 위치정보 가져오기 */
 
-//   // 현재 위치 가져오기
-//   // 위치정보 가져오기 성공했을 때 , 위치정보 가져오기 실패했을 때
+  // 현재 위치 가져오기
+  // 위치정보 가져오기 성공했을 때 , 위치정보 가져오기 실패했을 때
   navigator.geolocation.getCurrentPosition(getSuccess, getError);
 
-//   var cityList = [
-//     "seoul",
-//     "incheon",
-//     "busan",
-//     "daegu",
-//     "daejeon",
-//     "jeju",
-//     "gangneung",
-//     "bucheon",
-//     "gimhae",
-//     "gyeongju",
-//     "iksan",
-//     "yeosu",
-//   ];
+  var cityList = [
+    "seoul",
+    "incheon",
+    "busan",
+    "daegu",
+    "daejeon",
+    "jeju",
+    "gangneung",
+    "bucheon",
+    "gimhae",
+    "gyeongju",
+    "iksan",
+    "yeosu",
+  ];
 
-//   for (const city of cityList) {
-//     // 각 도시의 날씨를 구한다.
-//     let temp = getWeatherWithCity(city);
-//     console.log(city, temp);
-//     // 온도 바꾸기
-//     $("." + city + " > .celsius ").text(`${temp.celsius}℃`);
+  for (const city of cityList) {
+    // 각 도시의 날씨를 구한다.
+    let temp = getWeatherWithCity(city);
+    console.log(city, temp);
+    // 온도 바꾸기
+    $("." + city + " > .celsius ").text(`${temp.celsius}℃`);
 
-//     // 날씨아이콘 바꾸기
-//     var iconURL = "https://openweathermap.org/img/wn/" + temp.icon + ".png";
-//     // (".city > .icon > img")
-//     $("." + city + "> .icon > img").attr("src", iconURL);
-//   }
+    // 날씨아이콘 바꾸기
+    var iconURL = "https://openweathermap.org/img/wn/" + temp.icon + ".png";
+    // (".city > .icon > img")
+    $("." + city + "> .icon > img").attr("src", iconURL);
+  }
 
 //   // 가져오기 성공
   function getSuccess(position) {
@@ -179,6 +179,6 @@
 
 //     return temp;
 //   }
-// })();
+})();
 
 
