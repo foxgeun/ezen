@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "ezen박수근",
+		"path": "../../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "javascript_study"
+  }
+}
