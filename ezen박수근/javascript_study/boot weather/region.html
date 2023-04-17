@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/gimhae.css">
+    <link rel="stylesheet" href="./css/region.css">
     <!-- fontawesome -->
     <!-- 폰트어썸 -->
     <link
@@ -106,20 +106,36 @@
         </nav>
         </header>
         <main>
-            <div class="card" style="width: 18rem;">
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-</div>
-<div class="card" style="width: 18rem;">
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-</div>
+            <div class="weather_div">
+              
+               <div class="row">
+                 <div class="card text-center col-6">
+                    
+                    <img class="image_div">
+
+                    </img>
+                    </div>
+                    <div class="card text-center col-6">
+                   
+                    <div class="card-body">
+                        <div>
+                        <h1  class="card-city"></h1>
+                        <hr>
+                        <h3 class="card_text"></h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-temp"></h5>
+                        <p class="card-max-temp"></p>
+                        <p class="card-min-temp"></p>
+                        <p class="card_wind"></p>
+                        <p class="card_hum"></p>
+                        
+                    </div>
+                    </div>
+                    
+                </div>
+            
+               </div>
         </main>
          <footer>
         <div>
@@ -145,7 +161,8 @@
       </footer>
 
     </div>
-    <script src="./js/gimhae.js"></script>
+      <script src="../03.jQuery/jquery-3.6.4.min.js"></script>
+    <script src="./js/region.js"></script>
     
 </body>
 </html>
