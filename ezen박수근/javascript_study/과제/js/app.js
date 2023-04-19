@@ -47,8 +47,12 @@
 (function () {
   //영화 api b8cfc814abb09ebb64d0f165854e5596
 
+  $("btn1").on("click", function (e) {
+    $(".home_title").text("아아");
+  });
+
   const movieAPI =
-    ("https://api.themoviedb.org/3/movie/popular?api_key=b8cfc814abb09ebb64d0f165854e5596&language=ko-KR&page=1&region=KR"); // city가 계속 붙으므로 url 초기화를 위해 반드시 넣어준다
+    "https://api.themoviedb.org/3/movie/popular?api_key=b8cfc814abb09ebb64d0f165854e5596&language=ko-KR&page=1&region=KR"; // city가 계속 붙으므로 url 초기화를 위해 반드시 넣어준다
 
   $.ajax({
     type: "GET",
@@ -58,10 +62,18 @@
     success: function (data) {
       console.log(data);
 
-      let imgURL = "https://image.tmdb.org/t/p/w500/" + data.results[0].poster_path;
-      console.log(imgURL);
-      $(".movie_img").attr("src", `${imgURL}`)
-      $(".movie_ex").text(data.results[0].title);
+      for (let i = 0; i <= 20; i++) {
+        let imgURL =
+          "https://image.tmdb.org/t/p/w500/" + data.results[i].poster_path;
+        console.log(data.results[i].title);
+        $(".movie_link").append(
+          `<a href="https://www.themoviedb.org/movie/${data.results[i].id}"><img class="movie_img" src="${imgURL}"></img><h1 class="movie_ex">${data.results[i].title}</h1></a>`
+        );
+
+        console.log(data.results[i].id);
+      }
+      // https://api.themoviedb.org/3/movie/${data.results[i].id}api_key=b8cfc814abb09ebb64d0f165854e5596&language=ko-KR&append_to_response=KR
+      // https://www.themoviedb.org/movie/data.results[i].id?language=ko
 
       // for (let i = 0; i <= 7; i++) {
       //   console.log("영화제목: " + data.results[i].title);
@@ -94,64 +106,50 @@
       console.log("error:" + error);
     },
   });
-  const movie2API =
-    "https://api.themoviedb.org/3/movie/popular?api_key=b8cfc814abb09ebb64d0f165854e5596&language=ko-KR&page=2&region=KR"; // city가 계속 붙으므로 url 초기화를 위해 반드시 넣어준다
+  //   const movie2API =
+  //     "https://api.themoviedb.org/3/movie/popular?api_key=b8cfc814abb09ebb64d0f165854e5596&language=ko-KR&page=2&region=KR"; // city가 계속 붙으므로 url 초기화를 위해 반드시 넣어준다
 
-  $.ajax({
-    type: "GET",
-    url: movie2API,
-    dataType: "json",
-    async: false, // 결과 데이터를 리턴시키기 위해 동기 방식으로 변경
-    success: function (data) {
-      console.log(data);
+  //   $.ajax({
+  //     type: "GET",
+  //     url: movie2API,
+  //     dataType: "json",
+  //     async: false, // 결과 데이터를 리턴시키기 위해 동기 방식으로 변경
+  //     success: function (data) {
+  //       console.log(data);
 
-     
-    },
-    error: function (request, status, error) {
-      //응답 에러시 처리 작업
-      console.log("code:" + request.status);
-      console.log("message:" + request.responseText);
-      console.log("error:" + error);
-    },
-  });
+  //     },
+  //     error: function (request, status, error) {
+  //       //응답 에러시 처리 작업
+  //       console.log("code:" + request.status);
+  //       console.log("message:" + request.responseText);
+  //       console.log("error:" + error);
+  //     },
+  //   });
 
-   const movie_now_API =
-     "https://api.themoviedb.org/3/movie/now_playing?api_key=b8cfc814abb09ebb64d0f165854e5596&language=ko-KR&page=1&region=KR"; // city가 계속 붙으므로 url 초기화를 위해 반드시 넣어준다
+  //    const movie_now_API =
+  //      "https://api.themoviedb.org/3/movie/now_playing?api_key=b8cfc814abb09ebb64d0f165854e5596&language=ko-KR&page=1&region=KR"; // city가 계속 붙으므로 url 초기화를 위해 반드시 넣어준다
 
-   $.ajax({
-     type: "GET",
-     url: movie_now_API,
-     dataType: "json",
-     async: false, // 결과 데이터를 리턴시키기 위해 동기 방식으로 변경
-     success: function (data) {
-       console.log(data);
-      const i =0
+  //    $.ajax({
+  //      type: "GET",
+  //      url: movie_now_API,
+  //      dataType: "json",
+  //      async: false, // 결과 데이터를 리턴시키기 위해 동기 방식으로 변경
+  //      success: function (data) {
+  //        console.log(data);
+  //       const i =0
 
-       
-         let imgURL =
-           "https://image.tmdb.org/t/p/w500/" + data.results[i].poster_path;
-         console.log(imgURL);
-         $(".now_img").attr("src", `${imgURL}`);
-         $(".now_ex").text(data.results[0].title);
-        
+  //          let imgURL =
+  //            "https://image.tmdb.org/t/p/w500/" + data.results[i].poster_path;
+  //          console.log(imgURL);
+  //          $(".now_img").attr("src", `${imgURL}`);
+  //          $(".now_ex").text(data.results[0].title);
 
-       
-
-
-
-
-
-
-
-
-     },
-     error: function (request, status, error) {
-       //응답 에러시 처리 작업
-       console.log("code:" + request.status);
-       console.log("message:" + request.responseText);
-       console.log("error:" + error);
-     },
-   });
-
-
+  //      },
+  //      error: function (request, status, error) {
+  //        //응답 에러시 처리 작업
+  //        console.log("code:" + request.status);
+  //        console.log("message:" + request.responseText);
+  //        console.log("error:" + error);
+  //      },
+  //    });
 })();

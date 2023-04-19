@@ -39,14 +39,26 @@
       padding: 0;
     }
 
-    .swiper {
+   
+
+    .swip_div{
+        display: flex;
+        align-items: center;
+        height: 400px;
+        background-color: #032541;
+    }
+        
     
+
+    .swiper {
+        background-color: #032541;
+        margin-top:40px ;
       width: 100%;
-      height: 100%;
+      height: 300px;
     }
 
     .swiper-slide {
-        background-color: #032541 !important;
+    background-color: #032541 !important;
       text-align: center;
       font-size: 18px;
       background: #fff;
@@ -62,37 +74,10 @@
       object-fit: cover;
     }
 
-
-    .swiper{
-        
-        height: 500px;
-        border: 1px solid;
-        margin: 0 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        
-    }
-
-    .swiper-slide img{
-        
-        height: 300px;
-        width: 200px;
-        margin: 0 10px;
-    }
-    .swiper-slide{
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-    }
-
     .movie_link{
         display: flex !important;
-        justify-content: center !important;
-        flex-direction: column;
+        margin-top: 10px;
+        
         text-decoration: none;
         color: black;
     }
@@ -100,10 +85,46 @@
     .movie_ex{
         color: white;
         margin-top: 10px;
-        font-size: 20px;
+        margin-left: 20px;
+        font-size: 14px;
         text-align: center;
         font-weight: bold;
+        
     }
     .movie_div{
         display: flex;
     }
+    .swiper-slide h1{
+        font-weight: bold; 
+        color: rgba(255, 255, 255, 0.726);
+    }
+
+    .movie_now{
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+    }
+    .title_div{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center
+        
+    }
+    .movie_img{
+        height: 200px;
+        margin-left: 20px;
+    }
+    .movie_link a{
+        text-decoration: none;
+    }
+    .btn1{
+        width: 200px;
+        height: 300px;
+        border: 1px solid black;
+    }
+
+    
+   
+    
