@@ -75,6 +75,14 @@
     }
 
     .movie_link{
+        
+        display: flex !important;
+        margin-top: 10px;
+        
+        text-decoration: none;
+        color: black;
+    }
+    .movie_link2{
         display: flex !important;
         margin-top: 10px;
         
@@ -119,12 +127,24 @@
     .movie_link a{
         text-decoration: none;
     }
-    .btn1{
+    
+    
+    
+    .hidden{
+        display: none !important;
+    }
+    
+    .movie_link2 a{
+        text-decoration: none;
+    }
+    
+    .btn_div{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn_div button{
         width: 200px;
         height: 300px;
         border: 1px solid black;
     }
-
-    
-   
-    
