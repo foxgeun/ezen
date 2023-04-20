@@ -26,6 +26,7 @@
 
  html,
     body {
+        height: 3000px !important;
       position: relative;
       height: 100%;
     }
@@ -148,3 +149,34 @@
         height: 300px;
         border: 1px solid black;
     }
+
+
+    .movie_nav{
+        margin-top: 200px;
+        height: auto;
+        border: 1px solid black;
+    }
+
+
+    .movie_con , .movie_con1{
+        
+        display: flex !important;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .movie_con h1 , .movie_con1 h1{
+       
+        color: black;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .movie_con a ,  .movie_con1 a{
+        width: 150px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    
