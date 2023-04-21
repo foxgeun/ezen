@@ -158,14 +158,14 @@
     }
 
 
-    .movie_con , .movie_con1{
+    .movie_con , .movie_con1, .movie_con2, .movie_con3{
         
         display: flex !important;
         flex-wrap: wrap;
         height: auto;
     }
 
-    .movie_con h1 , .movie_con1 h1{
+    .movie_con h1 , .movie_con1 h1 , .movie_con2 h1, .movie_con3 h1{
        
         color: black;
         font-size: 14px;
@@ -173,10 +173,14 @@
         font-weight: bold;
     }
 
-    .movie_con a ,  .movie_con1 a{
+    .movie_con a ,  .movie_con1 a,.movie_con2 a, .movie_con3 a{
         width: 150px;
         text-align: center;
         text-decoration: none;
+    }
+    .btn1,.btn2{
+        width: 30px;
+        height: 30px;
     }
 
     
