@@ -178,9 +178,14 @@
         text-align: center;
         text-decoration: none;
     }
-    .btn1,.btn2{
-        width: 30px;
-        height: 30px;
-    }
+    
 
+    
+
+    .moive_atag:hover .movie_img{
+       border: solid 1px black;
+        margin-top: 20px; 
+        filter: brightness(50%);
+      }
+      
     
