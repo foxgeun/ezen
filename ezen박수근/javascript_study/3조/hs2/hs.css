@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #032541;
+}
+.header img {
+  margin-left: 20px;
+}
+.header a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 메인 */
+
+.wrap {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  height: 600px;
+}
+.main1 {
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  display: flex;
+}
+.main1_swiper {
+  height: 600px !important;
+  width: 1200px !important;
+}
+
+.main1__join {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-self: flex-end;
+  width: 180px;
+  height: 80px;
+}
+
+.main1__logo {
+  background-image: url(https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg);
+  width: 180px;
+  height: 150px;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.main1__join > button {
+  display: flex;
+  font-size: 19px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 175px;
+  flex-wrap: nowrap;
+  background-color: #0d253f;
+  color: white;
+  border: none;
+  height: 55px;
+}
+
+.swiperImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(60%);
+}
+.swiper-img1 {
+  background-image: url(https://www.themoviedb.org/t/p/original/2KVXWp6pEtnhwafW5itvct35yCf.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.swiper-img2 {
+  background-image: url(https://www.themoviedb.org/t/p/original/ceYZCBfwbBwSpGJ6PapNVw5jqLG.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.swiper-img3 {
+  background-image: url(https://www.themoviedb.org/t/p/original/yEWkS8G6s6SzuHXkNso88luR2mF.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  align-items: flex-start !important;
+}
+.swiper-img4 {
+  background-image: url(https://www.themoviedb.org/t/p/original/tYcmm8XtzRdcT6kliCbHuWwLCwB.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.swiperImg > a {
+  text-shadow: -11px 1px 7px #000000;
+}
+
+.swiper-wrapper {
+}
+
+.main2 {
+  min-width: 1200px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-size: 20px;
+}
+
+.main2_mv,
+.maine3_tv {
+  display: flex;
+  margin: 0 auto;
+}
+.mv_imgbox,
+.tv_imgbox {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mv_img,
+.tv_img {
+  width: 260px;
+  height: 350px;
+  padding: 10px;
+  padding-bottom: 5px;
+  padding-top: 40px;
+  background-color: black;
+}
+
+.main__title {
+  font-size: 30px;
+  font-family: fantasy;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.mv_name,
+.tv_name {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 65px;
+  width: 260px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.btnPlus {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.btnPlus > button {
+  width: 180px;
+  height: 50px;
+  background-color: #0d253f;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer {
+  background-color: #032541 !important;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.footer > div {
+  display: flex;
+  width: 50%;
+}
+
+.footer ul {
+  padding-left: 60px;
+}
+
+.footer ul li {
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.footer_1 {
+  justify-content: flex-end;
+}
